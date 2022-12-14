@@ -10,3 +10,26 @@ Lets say that I want "/mnt/lucene" as path to my lucene directory. The path whil
 ### Environment Variables
 In visual studio, provide the environment variables in the User Secrets.
 In aws lambda, provide the environment variable in the lambda environment variable. (Key: Lucene__Path)
+
+
+## How to Deploy : From Windows
+Open the solution in visual studio.
+
+If you don't have aws tool kit for vs intalled, install it and restart vs.
+
+Right click the MyProject.WebApi project from the solution.
+
+Click on Publish to aws lambda.
+
+Create stack and bucket. Publish. Solve permission issues(You got this.)
+
+Once deployed, 
+
+Create efs storage, create aceess point for efs storage. Follow the article linked above for permission settings.
+
+Add environment variables for lambda. (as of now its just "Lucene__Path").
+
+Add file system to lambda...follow article. 
+
+
+
