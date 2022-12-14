@@ -1,0 +1,2 @@
+Connect EFS with your lambda function:
+https://aws.amazon.com/blogs/compute/using-amazon-efs-for-aws-lambda-in-your-serverless-applications/
